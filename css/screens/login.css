@@ -1,5 +1,30 @@
+@keyframes rotateLogo{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+.main-body__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  animation: rotateLogo 4s ease-in-out infinite;
+}
+
+.main-body__logo img{
+  width: 200px;
+}
+
 .welcome-header {
-  margin: 90px 0;
+  margin-top: 35px;
+  margin-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,6 +56,7 @@
 
 #login-form input:not([type="submit"]) {
   border-bottom: var(--main-border);
+  background-color: transparent;
   transition: border-bottom 0.3s ease-in-out;
 }
 
@@ -39,14 +65,18 @@
 }
 
 #login-form input:focus {
-  border-bottom: 1px solid var(--yellow);
+  border-bottom: 1px solid burlywood;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: burlywood;
   cursor: pointer;
   padding: 20px 0;
   border-radius: 5px;
+}
+
+#login-form input[type="submit"]:hover{
+  transform: scale(1.05);
 }
 
 #login-form a {
