@@ -9,6 +9,7 @@
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
+  cursor: default;
 }
 
 .screen-header__icons span {
@@ -17,6 +18,26 @@
 
 .screen-header__icons {
   display: flex;
+}
+
+@keyframes iconEffect {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.screen-header__icons i {
+  cursor: pointer;
+}
+
+.screen-header__icons i:not(.fa-cog) {
+  animation: iconEffect 2s linear infinite;
 }
 
 .screen-header__icons div {
