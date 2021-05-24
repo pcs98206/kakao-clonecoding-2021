@@ -1,10 +1,11 @@
 .settings__setting {
-  padding: 20px 0;
+  padding: 20px 8px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .settings__setting i {
@@ -15,4 +16,9 @@
 
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+.settings__setting:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px burlywood;
 }
