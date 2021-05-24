@@ -1,4 +1,4 @@
-.more-suggestions{
+.more-suggestions {
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .more-suggestions {
-  margin-top: 50px;
+  margin-top: 30px;
   border-top: var(--main-border);
   padding-top: 40px;
   padding-bottom: 80px;
@@ -20,21 +20,29 @@
 }
 
 .more-suggestions__icons {
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .more-suggestions__icon {
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.more-suggestions__icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
+  background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -44,7 +52,16 @@
 
 .more-suggestions__icon-image i {
   font-size: 32px;
-  color: white;
+}
+
+.more-suggestions__icon:nth-child(2) .more-suggestions__icon-image i {
+  color: red;
+}
+
+.more-suggestions__icon-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
 
 .more-suggestions__icon-text {
