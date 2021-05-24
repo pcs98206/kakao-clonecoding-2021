@@ -6,6 +6,9 @@
   justify-content: center;
   padding: 5px 3px;
   box-sizing: border-box;
+  background-color: #f9f1e3;
+  z-index: 99;
+  cursor: default;
 }
 
 .status-bar__column {
@@ -29,6 +32,11 @@
 
 .status-bar__column .fa-battery-quarter {
   margin: 0 5px;
+  color: red;
+}
+
+.status-bar__column .fa-bolt{
+  color: var(--yellow);
 }
 
 /* .status-bar__column .fa-bolt {
