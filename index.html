@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Welcome to Kokoa Talk</title>
 </head>
-<body>
+<body class="main-body">
   <div class="status-bar">
     <div class="status-bar__column">
       <span>No Service</span>
@@ -17,23 +17,28 @@
       <span>18:43</span>
     </div>
     <div class="status-bar__column">
-      <span>110%</span>
+      <span>20%</span>
       <i class="fas fa-battery-quarter"></i>
       <i class="fas fa-bolt"></i>
     </div>
   </div>
 
+  <div class="main-body__logo">
+   <img src="images/logo.jpg" alt="">
+  </div>
+
   <header class = "welcome-header">
-    <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
-    <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    <h1 class="welcome-header__title">Welcome to Central Perk</h1>
+    <p class="welcome-header__text">If you have a Perk Membership Account, log in with your email or phone number.</p>
   </header>
 
   <form action="friends.html" method="get" id="login-form">
-    <input name="username" type="text" placeholder="Email or phone number">
-    <input name="password" type="password" placeholder="Password">
+    <input name="username" type="text" placeholder="Email or phone number" required>
+    <input name="password" type="password" placeholder="Password" minlength="5">
     <input type="submit" value="Log In">
-    <a href="#">Find Kokoa Account or Password</a>
+    <a href="#">Find Membership Account or Password</a>
   </form>
+  
   <div id="no-mobile">
     <span>Your screen is too big!</span>
   </div>
