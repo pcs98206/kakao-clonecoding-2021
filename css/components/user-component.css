@@ -1,6 +1,8 @@
 .user-component {
   justify-content: space-between;
   margin-bottom: 10px;
+  padding: 5px 5px;
+  border-radius: 10px;
 }
 
 .user-component,
@@ -52,7 +54,33 @@
   color: var(--gray-font);
 }
 
+.user-component__column:last-child div {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__column:last-child div span {
+  margin-right: 3px;
+}
+
 .user-component__time {
   display: block;
   margin-bottom: 5px;
+}
+
+.user-component__column audio {
+  width: 30vw;
+}
+
+.user-component-move:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px burlywood;
+}
+
+.user-component__column-recommended i {
+  color: tomato;
+}
+
+.user-component__column-recommended:hover {
+  cursor: pointer;
 }
