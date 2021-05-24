@@ -22,6 +22,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  overflow-y: scroll;
+  background-color: #f9f1e3;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .main-screen {
