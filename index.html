@@ -29,13 +29,17 @@
 
   <header class = "welcome-header">
     <h1 class="welcome-header__title">Welcome to Central Perk</h1>
-    <p class="welcome-header__text">If you have a Perk Membership Account, log in with your email or phone number.</p>
+    <p class="welcome-header__text">If you are member of the Perk Membership, log in with your email or phone number.</p>
   </header>
 
-  <form action="friends.html" method="get" id="login-form">
+  <form id="login-form" onSubmit="return false";>
     <input name="username" type="text" placeholder="Email or phone number" required>
     <input name="password" type="password" placeholder="Password" minlength="5">
-    <input type="submit" value="Log In">
+    <input class="loginBtn" type="submit" value="Log In">
+  </form>
+
+  <form action="signup.html" method="get" id="signup-form">
+    <input type="submit" value="Sign Up">
     <a href="#">Find Membership Account or Password</a>
   </form>
   
@@ -47,5 +51,6 @@
     src="https://kit.fontawesome.com/6478f529f2.js"
     crossorigin="anonymous"
   ></script>
+<script src="js/login.js"></script>
 </body>
 </html>
