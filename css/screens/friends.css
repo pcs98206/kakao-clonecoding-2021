@@ -22,6 +22,12 @@
   padding-top: 15px;
 }
 
+.friends-screen__chennel-header i,
+.friends-screen__friends-header i {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
 .friends-screen__friends {
   margin-top: 25px;
   border-top: var(--main-border);
