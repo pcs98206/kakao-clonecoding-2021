@@ -84,3 +84,11 @@
 .user-component__column-recommended:hover {
   cursor: pointer;
 }
+
+.hide{
+  display: none;
+}
+
+.rotateBtn{
+  transform: rotate(180deg);
+}
